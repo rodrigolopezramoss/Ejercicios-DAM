@@ -4,6 +4,6 @@
     char y = "z";
     String z = "coche";
 
-    System.out.println( x + z + x);
+    System.out.println( x + z + y);
   }
 }
