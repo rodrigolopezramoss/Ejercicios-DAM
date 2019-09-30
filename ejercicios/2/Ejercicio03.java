@@ -1,4 +1,4 @@
-﻿public class Ejercicio03{
+public class Ejercicio03{
   public static void main(String[] args){
     String miNombre = "Rodrigo López Ramos" ;
     String miDirecc = "Calle Juan Silveti n26" ;

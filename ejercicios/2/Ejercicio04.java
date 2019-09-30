@@ -1,4 +1,4 @@
-﻿ public class Ejercicio04{
+ public class Ejercicio04{
   public static void main(String[] args){
     int x = 1  ;
     double y = x * 166.386;
