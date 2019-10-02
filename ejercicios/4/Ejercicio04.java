@@ -19,7 +19,8 @@ public class Ejercicio04{
     
 
     if (hort>40) {
-      double t = 16 * hort * 4.2;
+		double x= hort-40; 
+      double t = (((40*12)+(16 * x ))* 4.2);
       System.out.println("Usted debería cobrar "+ t + " euros al mes, aproximadamente.");
 
     } else {
