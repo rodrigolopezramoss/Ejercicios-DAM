@@ -4,12 +4,12 @@ public class Ejercicio01 {
 
     System.out.print("Introduce un número: ");    
     linea = System.console().readLine();
-    int num;
+    double num;
     num = Integer.parseInt( linea );
     
     System.out.print("Introduce otro número: ");
     linea = System.console().readLine();
-    int num2;
+    double num2;
     num2 = Integer.parseInt( linea );
     
     double mul = num * num2;

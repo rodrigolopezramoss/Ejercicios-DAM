@@ -20,6 +20,8 @@ public class Ejercicio07{
  
     double t = luz + agu + gas;
 
-    System.out.println("Importe total: "+ t + " euros");
+    System.out.println("IVA: "+ t*0.21 + " euros.");
+    System.out.println("Importe total: "+ t + " euros.");
+    System.out.println("Importe total con IVA incluido: "+ t*1.21 + " euros.");
   }
 }
