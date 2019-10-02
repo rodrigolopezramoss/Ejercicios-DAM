@@ -2,31 +2,24 @@ public class Ejercicio05{
   public static void main(String[] args){
       
     String linea;
+    
+    System.out.println("Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0");
 
-    System.out.print("¿Cuántos días trabajas a la semana? ");    
+
+    System.out.print("Introduce el valor de a ");    
     linea = System.console().readLine();
-    int dia;
-    dia = Integer.parseInt( linea );
+    double a;
+    a = Double.parseDouble( linea );
     
-    System.out.print("¿Cuántas horas cada día? ");    
+    System.out.print("Introduce el valor de b ");    
     linea = System.console().readLine();
-    int hor;
-    hor = Integer.parseInt( linea );
+    double b;
+    b = Double.parseDouble( linea );
     
-    double hort= hor*dia;
+    double x = (0-b)/a;
     
-    System.out.println("Usted trabaja "+ hort + " horas al mes.");
+    System.out.println("X vale: " + x);
     
-
-    if (hort>40) {
-      double t = 16 * hort * 4.2;
-      System.out.println("Usted debería cobrar "+ t + " euros al mes, aproximadamente.");
-
-    } else {
-      double t = 12 * hor * dia * 4.2;
-      System.out.println("Usted debería cobrar "+ t + " euros al mes, aproximadamente.");
-    } 
-
 
 
   }
