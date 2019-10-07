@@ -7,7 +7,7 @@ public class Ejercicio15{
 
     System.out.println("Escríbe un carácter cualquiera");
     linea = System.console().readLine();
-    int x;
+    String x = System.console().readLine();
     x = Integer.parseInt( linea );
         
 
