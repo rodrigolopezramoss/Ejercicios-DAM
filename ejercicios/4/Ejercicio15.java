@@ -1,20 +1,20 @@
 public class Ejercicio15{
   public static void main(String[] args){
 
+    String x;
     String linea;
 
     System.out.println("Vamos a hacer una pirámide");
 
     System.out.println("Escríbe un carácter cualquiera");
-    linea = System.console().readLine();
-    String x = System.console().readLine();
-    x = Integer.parseInt( linea );
-        
+    x = System.console().readLine();
+    
+    
 
     System.out.println("La dirección de la pirámide, siendo 1-arriba, 2-abajo, 3-derecha, 4-izquierda.");
     linea = System.console().readLine();
     int y;
-    y = Integer.parseInt( linea );
+    y = Integer.parseInt( linea);
 
     if (y==1){
     System.out.println("       "+x);
