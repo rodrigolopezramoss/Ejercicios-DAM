@@ -76,10 +76,8 @@ public class Ejercicio16{
 
     if (r7.equals("si")){
       p+=3;
-    } else{
-      p += 0;
-    }
-
+    } 
+    
     if (r8.equals("si")){
       p+=3;
     } 
