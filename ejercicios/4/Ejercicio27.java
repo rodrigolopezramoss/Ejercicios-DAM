@@ -20,39 +20,36 @@ public class Ejercicio27{
     
     switch (s){
       case "manzana":
-      p = 18;
-
-        break;
+        p = 18;
+      break;
       case "chocolate":
-      String c;
-      System.out.println("¿Chocolate negro o blanco?");
-      c = System.console().readLine();
-      
-      if (c.equals("negro")){
+        String c;
+        System.out.println("¿Chocolate negro o blanco?");
+        c = System.console().readLine();
+        if (c.equals("negro")){
 		  p = 14;
-		  } else{
-			  p = 15;
-			  }  
-	    break;	    
+	    } else{
+		  p = 15;
+	    }  
+	  break;	    
       case "fresa":
-      p = 16;
-        break;
+        p = 16;
+      break;
       default:
      }
-     System.out.println("Tarta sabor "+s+": "+p+"€");
+    System.out.println("Tarta sabor "+s+": "+p+"€");
      
-     double nat= 0;
-     double nom= 0;
-     if(n .equals("s")){
-	   nat=2.50;
-       System.out.println("Con nata: "+nat+"€");
-     }
-     if(o .equals("s")){
-	   nom=2.75;	 
-       System.out.println("Con nombre: "+nom+"€");
-     }
-     
-     System.out.println("Total: "+(p+nat+nom)+"€");     
+    double nat= 0;
+    double nom= 0;
+    if(n .equals("s")){
+	  nat=2.50;
+      System.out.println("Con nata: "+nat+"€");
+    }
+    if(o .equals("s")){
+	  nom=2.75;	 
+      System.out.println("Con nombre: "+nom+"€");
+    }
+    System.out.println("Total: "+(p+nat+nom)+"€");     
   }
 }
 

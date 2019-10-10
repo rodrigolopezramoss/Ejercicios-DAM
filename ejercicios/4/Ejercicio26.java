@@ -28,28 +28,23 @@ public class Ejercicio26{
       case "miércoles":
 		e= 5;
 		    System.out.println("Precio por entrada individual: "+e);
-        break;
+      break;
       case "jueves":
 		if (p%2==0){
 		  e=11*(p/2);
 		  System.out.println("Precio por entrada por parejas: "+11);
           System.out.println("Total: "+(e));
-
         } else {
 	  	  e=(((p-1)/2)*11);
 	  	  System.out.println("Precio por entrada por parejas: "+11);
           System.out.println("Precio por entrada individual: "+8);
           System.out.println("Total: "+(e+8));
-          
-
         }
-        break;
+      break;
       default:
       System.out.println("Entradas individuales: "+p);
       System.out.println("Precio por entrada individual: "+e);
       System.out.println("Total: "+ (e*p));
-
-      
     }
     double de=0;
     switch (t){
@@ -64,21 +59,20 @@ public class Ejercicio26{
     }
     
     System.out.println("Descuento de: "+de);
-        switch (d){
+    
+    switch (d){
       case "miércoles":
 	    System.out.println("A pagar: "+(e-de));
         break;
       case "jueves":
-      		if (p%2==0){
-			    System.out.println("A pagar: "+(e-de));	
+    	if (p%2==0){
+		    System.out.println("A pagar: "+(e-de));	
         } else {
-	            System.out.println("A pagar: "+((e+8)-de));
+            System.out.println("A pagar: "+((e+8)-de));
         }
         break;
       default:
     System.out.println("A pagar: "+((e*p)-de));
-
-      
     }
   }
 }
