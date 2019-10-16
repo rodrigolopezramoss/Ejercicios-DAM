@@ -1,8 +1,8 @@
-public class Ejercicio14{
+public class Ejercicio15{
   public static void main(String[] args){
     
     String linea;
-    System.out.println("Hagamos potencias.");
+    System.out.println("Hagamos más potencias.");
     
     System.out.println("Escríbeme la base.");
     linea = System.console().readLine();
@@ -14,6 +14,7 @@ public class Ejercicio14{
     int y;
     y = Integer.parseInt( linea );
     
+    int t = 0;
     double z = 1;
     if (y==0){
       z=1;
@@ -21,8 +22,10 @@ public class Ejercicio14{
     if(y>0){
       for(int i=1;i<=y;i++){
         z= z * x;
+        t++;
+        System.out.println(x +"^"+ t +", resultado: "+ z); 
         }
     }
-    System.out.println("Resultado: "+ z);  
+
   }
 }
