@@ -19,60 +19,62 @@ public class Ejercicio26{
     t = System.console().readLine(); 
     
     int e =8;
-    int a =e*p;
+    int tot = e * p;
     
     System.out.println("Gracias, aquí tiene.");
-    System.out.println("Entradas individuales: "+p);
     
     switch (d){
       case "miércoles":
-		e= 5;
-		    System.out.println("Precio por entrada individual: "+e);
+        e= 5;
+        System.out.println("Precio por entrada individual: "+e);
+        System.out.println("Total: "+ tot);
       break;
       case "jueves":
 		if (p%2==0){
 		  e=11*(p/2);
+      tot = e;
 		  System.out.println("Precio por entrada por parejas: "+11);
-          System.out.println("Total: "+(e));
-        } else {
+      System.out.println("Total: "+ tot);
+      } else {
 	  	  e=(((p-1)/2)*11);
+        tot = e + 8;
 	  	  System.out.println("Precio por entrada por parejas: "+11);
-          System.out.println("Precio por entrada individual: "+8);
-          System.out.println("Total: "+(e+8));
+        System.out.println("Precio por entrada individual: "+8);
+        System.out.println("Total: "+ tot);
         }
       break;
       default:
-      System.out.println("Entradas individuales: "+p);
-      System.out.println("Precio por entrada individual: "+e);
-      System.out.println("Total: "+ (e*p));
+        tot = e * p;
+        System.out.println("Entradas individuales: "+p);
+        System.out.println("Precio por entrada individual: "+e);
+        System.out.println("Total: "+ tot);
     }
     double de=0;
     switch (t){
       case "s":
-		de= e*0.10;
+        de= tot * 0.10;
         break;
       case "n":
-		de= 0;
+        de= 0;
         break;
       default:
         System.out.println("Pues nada...");
     }
     
-    System.out.println("Descuento de: "+de);
-    
+    System.out.println("Descuento de: "+ de);
     switch (d){
       case "miércoles":
-	    System.out.println("A pagar: "+(e-de));
-        break;
+        System.out.println("A pagar: "+ (tot-de));
+      break;
       case "jueves":
-    	if (p%2==0){
-		    System.out.println("A pagar: "+(e-de));	
+        if (p%2==0){
+          System.out.println("A pagar: "+ (tot-de));	
         } else {
-            System.out.println("A pagar: "+((e+8)-de));
+          System.out.println("A pagar: "+ (tot-de));
         }
         break;
       default:
-    System.out.println("A pagar: "+((e*p)-de));
+        System.out.println("A pagar: "+ (tot-de));
     }
   }
 }
