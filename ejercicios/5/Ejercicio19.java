@@ -4,7 +4,7 @@ public class Ejercicio19{
     String caracter;
     String linea;
     
-    System.out.println("Dame un caracter y te haré una piramide, también deberás darme su altura.");
+    System.out.println("Dame un caracter y te haré una pirámide, también deberás darme su altura.");
 
     System.out.println("Escribe un carácter.");
     caracter = System.console().readLine();
