@@ -13,13 +13,13 @@ public class Ejercicio16{
 
     for (int i = 2; i < x; i++) {
       if ((x % i) == 0) {
-      p = false;
-        }
+        p = false;
       }
+    }
     if (p) {
     System.out.println("Tu número es primo.");
-      } else {
+    } else {
       System.out.println("Tu número no es primo.");
-        }
+      }
   }
 }
