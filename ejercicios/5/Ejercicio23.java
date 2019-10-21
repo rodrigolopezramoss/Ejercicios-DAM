@@ -3,7 +3,7 @@ public class Ejercicio23{
 
     String linea;
 
-    System.out.println("Calculemos la media de varios números.");
+    System.out.println("Mete números y ya paro yo.");
 
     System.out.println("Escribe números(El primero no cuenta).");
     linea = System.console().readLine();
