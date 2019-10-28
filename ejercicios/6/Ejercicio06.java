@@ -5,7 +5,6 @@ public class Ejercicio06{
   String res;
   
   int num =((int)(Math.random()*101));
-  
   System.out.println("Comienza: ");
   
   for (int i = 1; i <= 5; i++) {
@@ -15,6 +14,7 @@ public class Ejercicio06{
     
     if (x == num){
       System.out.println("¡¡Enhorabuena, has acertado!!");
+      break;
     } else {
       System.out.println("Intentalo de nuevo...");
     }
