@@ -5,7 +5,7 @@ public class Ejercicio04{
   
   for (int i = 1; i <= 20; i++) {
     int num =((int)(Math.random()*11));
-    System.out.println(num + " ");
+    System.out.print(num + ", ");
   }
   
   }
