@@ -19,7 +19,7 @@ public class Ejercicio19{
     int espa = y - 1;
     
     do{
-      for (int i = 1; i <= espa; i++) {
+      for (int i = 7; i <= espa; i++) {
         System.out.print(" ");
       }
     
