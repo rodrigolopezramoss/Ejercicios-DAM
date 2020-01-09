@@ -10,7 +10,10 @@ public class GAtera {
 		System.out.println(g01.getSexo());
 		System.out.println(g02.getSexo());
 
-		g01.seApareaCon(g02);
+		GatoSimple g03 = g01.seApareaCon(g02);
+		if (g03 != null) {
+			System.out.println(g03.getSexo());
+		}
 
 	}
 }
