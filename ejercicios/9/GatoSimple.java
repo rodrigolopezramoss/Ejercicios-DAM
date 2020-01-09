@@ -10,7 +10,7 @@ public class GatoSimple {
 	double peso;
 	
 	
-	// métodos ///////////////////////////////
+	// mÃ©todos ///////////////////////////////
 	
 	
 	// constructor
@@ -48,7 +48,7 @@ public class GatoSimple {
 	/**
 	* Hace que el gato coma.
 	* A los gatos les gusta el pescado, si le damos otra comida
-	* la rechazará.
+	* la rechazarÃ¡.
 	*
 	* @param comida la comida que se le ofrece al gato
 	*/
@@ -63,7 +63,7 @@ public class GatoSimple {
 	
 	/**
 	* Pone a pelear dos gatos.
-	* Solo se van a pelear dos machos entre sí.
+	* Solo se van a pelear dos machos entre sÃ­.
 	*
 	* @param contrincante es el gato contra el que pelear
 	*/
@@ -74,7 +74,7 @@ public class GatoSimple {
 			if (contrincante.getSexo().equals("hembra")) {
 				System.out.println("no peleo contra gatitas");
 			} else {
-				System.out.println("ven aquí que te vas a enterar");
+				System.out.println("ven aquÃ­ que te vas a enterar");
 			}
 		}
 	}
@@ -84,9 +84,8 @@ public class GatoSimple {
 			int num = (int)(Math.random()*4);
 			
 			if(num == 1) {
-				System.out.print("¡¡Bien tenemos un hijo!! Que guay, genial...");
+				System.out.print("Â¡Â¡Bien tenemos un hijo!! Que guay, genial...");
 				GatoSimple g03 = new GatoSimple();
-				this.sexo = (int)(Math.random()*2) == 0 ? " MACHO" : " HEMBRA";
 				g03.getSexo();
 				return g03;
 			}else {
